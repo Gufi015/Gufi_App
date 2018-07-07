@@ -1,7 +1,7 @@
 <Alloy>
 	<Window>
 		<View class="container">
-			<Label>Pagina de registro</Label>
+			<Label id="label">Pagina de registro</Label>
 		</View>
 	</Window>
 </Alloy>
