@@ -5,7 +5,7 @@ $.btnLogin.addEventListener('click', function(e){
 		var main = Alloy.createController('main').getView();
 		main.open();
 	}else{
-		var sing = Alloy.createController('sing').getView();
+		var sing = Alloy.createController('singUp').getView();
 		sing.open();
 	}
 	Titanium.API.info('presionaste el boton');

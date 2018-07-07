@@ -23,19 +23,13 @@
 	layout:"vertical"
 }
 
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color:"#1a5276 ",
-	textAlign:Titanium.UI.TEXT_ALIGNMENT_LEFT
-}
-
 "#lblUser": {
 	font: {
 		Size: 28
 	},
 	layout:"vertical",
 	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	color:"#1a5276 ",
 }
 
 "#lblPass": {
@@ -44,6 +38,7 @@
 	},
 	layout:"vertical",
 	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	color:"#1a5276 ",
 }
 
 	
