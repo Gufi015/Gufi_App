@@ -1,0 +1,20 @@
+<Alloy>
+	<Window class="container">
+		<View class="header">
+			<Label class="label">CLICK</Label>
+		</View>
+		<View class="center">
+			<View class="center1">
+				<Label class="label">USER</Label>
+				<TextField id="txtUser"></TextField>	
+			</View>
+			<View class="center2">
+				<Label class="label">PASSWORD</Label>
+				<TextField></TextField>	
+			</View>
+		</View>
+		<View class="footer">
+			<Button id="btnLogin">CLICK BUTTON</Button>
+		</View>
+	</Window>
+</Alloy>
