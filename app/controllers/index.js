@@ -1,5 +1,9 @@
-function doClick(e) {
-	alert($.label.text);
-}
+
+$.btnLogin.addEventListener('click', function(e){
+	alert('Bienvenido ' + $.txtUser.value);
+	Titanium.API.info('presionaste el boton');
+});
+
+
 
 $.index.open();

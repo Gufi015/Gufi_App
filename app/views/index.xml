@@ -1,20 +1,18 @@
 <Alloy>
-	<Window class="container">
-		<View class="header">
-			<Label class="label">CLICK</Label>
-		</View>
-		<View class="center">
-			<View class="center1">
-				<Label class="label">USER</Label>
+	<Window >
+		<View class="container">
+			<View class="header">
+				<ImageView id="image"  image="/images/superheroe.png"></ImageView>
+			</View>
+			<View class="center">			
+				<Label id="lblUser">USER</Label>
 				<TextField id="txtUser"></TextField>	
+				<Label id="lblPass">PASSWORD</Label>
+				<TextField id="txtPass"></TextField>	
 			</View>
-			<View class="center2">
-				<Label class="label">PASSWORD</Label>
-				<TextField></TextField>	
+			<View class="footer">
+				<Button id="btnLogin">Login</Button>
 			</View>
-		</View>
-		<View class="footer">
-			<Button id="btnLogin">CLICK BUTTON</Button>
 		</View>
 	</Window>
 </Alloy>
