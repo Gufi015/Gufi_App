@@ -8,5 +8,14 @@
 
 "#label":{
 	color:"RED",
-	width:"50",
+	width:"70",
+	height:"40"
+}
+
+"#btnMain":{
+	top:"0",
+	width:"350",
+	height:"50",
+	backgroundColor:"#009e5b",
+	borderRadius:"5",
 }

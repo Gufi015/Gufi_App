@@ -2,6 +2,7 @@
 	<Window>
 		<View class="container">
 			<Label id="label">Pagina Principal</Label>
+			<Button id="btnMain">DatosMain</Button>
 		</View>
 	</Window>
 </Alloy>

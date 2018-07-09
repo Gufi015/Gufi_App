@@ -27,8 +27,7 @@
 	font: {
 		Size: 28
 	},
-	layout:"vertical",
-	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	textAlign: "Titanium.UI.TEXT_ALIGNMENT_LEFT",
 	color:"#1a5276 ",
 }
 
@@ -36,8 +35,7 @@
 	font: {
 		Size: 28
 	},
-	layout:"vertical",
-	textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+	textAlign: "Titanium.UI.TEXT_ALIGNMENT_LEFT",
 	color:"#1a5276 ",
 }
 

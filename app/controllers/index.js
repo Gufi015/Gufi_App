@@ -11,8 +11,9 @@ $.btnLogin.addEventListener('click', function(e){
 	Titanium.API.info('presionaste el boton');
 });
 
-
-
+function informacion(){
+	Ti.API.info();
+}
 
 
 $.index.open();

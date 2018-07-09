@@ -2,6 +2,7 @@
 	<Window>
 		<View class="container">
 			<Label id="label">Pagina de registro</Label>
+			<Button id="btnDatos">DATOS</Button>
 		</View>
 	</Window>
 </Alloy>

@@ -2,7 +2,7 @@
 	<Window >
 		<View class="container">
 			<View class="header">
-				<ImageView id="image"  image="/images/superheroe.png"></ImageView>
+				<ImageView id="image"  image="/images/user.png"></ImageView>
 			</View>
 			<View class="center">			
 				<Label id="lblUser">USER</Label>
