@@ -4,12 +4,14 @@ $.btnLogin.addEventListener('click', function(e){
 	//alert('Bienvenido ' + $.txtUser.value);
 	Cloud.Users.login({
 		login: $.txtPass.value,
-		password:$.txtPass.value,
+		password: $.txtPass.value,
+		pretty_json: false,
 	}, function(e){
 		if (e.success){
+			var user = Users[0];
 			alert('Succes Login');
 		}else{
-			alert('Login Fail');
+			alert('Login Fail' + JSON.stringify(e));
 		}
 	});
 });
