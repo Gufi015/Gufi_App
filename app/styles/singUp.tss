@@ -8,14 +8,140 @@
 
 "#label":{
 	color:"RED",
-	width:"70",
+	width:"100",
 	height:"40"
 }
 
+".header":{
+	width:"100%",
+	height:"10%",
+	layout:"vertical"
+}
+".center":{
+	width:"100%",
+	height:"80%",
+	layout:"vertical",
+	top:"10",
+}
+
+".footer":{
+	width:"100%",
+	height:"10%",
+	layout:"vertical"
+}
+"#lblUsername": {
+	font: {
+		Size: 28
+	},
+	textAlign: "Titanium.UI.TEXT_ALIGNMENT_LEFT",
+	color:"#1a5276 ",
+}
+	
+"#txtUsername": {
+	width:350,
+	height:40,
+	color:"white",	
+	borderRadius:"5",
+	backgroundColor:"#009e5b",
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_EMAIL,
+	layout:"vertical"
+}
+
+"#lblEmail": {
+	font: {
+		Size: 28
+	},
+	textAlign: "Titanium.UI.TEXT_ALIGNMENT_LEFT",
+	color:"#1a5276 ",
+}
+	
+"#txtEmail": {
+	width:350,
+	height:40,
+	color:"white",	
+	borderRadius:"5",
+	backgroundColor:"#009e5b",
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_EMAIL,
+	layout:"vertical"
+}
+
+"#lblName": {
+	font: {
+		Size: 28
+	},
+	textAlign: "Titanium.UI.TEXT_ALIGNMENT_LEFT",
+	color:"#1a5276 ",
+}
+	
+"#txtName": {
+	width:350,
+	height:40,
+	color:"white",	
+	borderRadius:"5",
+	backgroundColor:"#009e5b",
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_EMAIL,
+	layout:"vertical"
+}
+
+"#lblLastName": {
+	font: {
+		Size: 28
+	},
+	textAlign: "Titanium.UI.TEXT_ALIGNMENT_LEFT",
+	color:"#1a5276 ",
+}
+	
+"#txtLastName": {
+	width:350,
+	height:40,
+	color:"white",	
+	borderRadius:"5",
+	backgroundColor:"#009e5b",
+	keyboardType:Titanium.UI.KEYBOARD_TYPE_EMAIL,
+	layout:"vertical"
+}
+
+"#lblPassword": {
+	font: {
+		Size: 28
+	},
+	textAlign: "Titanium.UI.TEXT_ALIGNMENT_LEFT",
+	color:"#1a5276 ",
+}
+	
+"#txtPassword": {
+	width:350,
+	height:40,
+	color:"white",	
+	borderRadius:"5",
+	backgroundColor:"#009e5b",
+	passwordMask:"true",
+	layout:"vertical"
+}
+
+"#lblPasswordConfirmation": {
+	font: {
+		Size: 28
+	},
+	textAlign: "Titanium.UI.TEXT_ALIGNMENT_LEFT",
+	color:"#1a5276 ",
+}
+	
+"#txtPasswordConfirmation": {
+	width:350,
+	height:40,
+	color:"white",	
+	borderRadius:"5",
+	backgroundColor:"#009e5b",
+	passwordMask:"true",
+	layout:"vertical"
+}
+
 "#btnDatos":{
-	top:"0",
+	bottom:"0",
 	width:"350",
 	height:"50",
 	backgroundColor:"#009e5b",
 	borderRadius:"5",
+	layout:"vertical"
 }

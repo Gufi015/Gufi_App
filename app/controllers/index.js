@@ -15,5 +15,4 @@ function informacion(){
 	Ti.API.info();
 }
 
-
 $.index.open();

@@ -1,8 +1,32 @@
 <Alloy>
 	<Window>
 		<View class="container">
-			<Label id="label">Pagina de registro</Label>
-			<Button id="btnDatos">DATOS</Button>
+			<View class="header">
+				<Label id="label">DATOS DEL USUARIO</Label>
+			</View>
+			<View class="center">
+				<Label id="lblUsername">USERNAME</Label>
+				<TextField id="txtUsername"></TextField>	
+				
+				<Label id="lblEmail">EMAIL</Label>
+				<TextField id="txtEmail"></TextField>
+				
+				<Label id="lblName">FIRST NAME</Label>
+				<TextField id="txtName"></TextField>
+				
+				<Label id="lblLastName">LAST NAME</Label>
+				<TextField id="txtLastName"></TextField>
+				
+				<Label id="lblPassword">PASSWORD</Label>
+				<TextField id="txtPassword"></TextField>
+				
+				<Label id="lblPasswordConfirmation">PASSWORD CONFIRMATION</Label>
+				<TextField id="txtPasswordConfirmation"></TextField>
+						
+			</View>
+			<View class="footer">
+				<Button id="btnDatos">ADD USER</Button>
+			</View>
 		</View>
 	</Window>
 </Alloy>
