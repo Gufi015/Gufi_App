@@ -3,13 +3,13 @@ var Cloud = require('ti.cloud');
 $.btnLogin.addEventListener('click', function(e){
 	//alert('Bienvenido ' + $.txtUser.value);
 	Cloud.Users.login({
-		login: $.txtPass.value,
+		login: $.txtUser.value,
 		password: $.txtPass.value,
-		pretty_json: false,
+		pretty_json: true,
 	}, function(e){
 		if (e.success){
-			var user = Users[0];
-			alert('Succes Login');
+			//var user = users[0];
+			alert('Bienvenido Usuario' + $.txtUser.value + 'Con numero de session:' + Cloud.sessionId);
 		}else{
 			alert('Login Fail' + JSON.stringify(e));
 		}
