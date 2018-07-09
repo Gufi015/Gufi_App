@@ -1,18 +1,25 @@
+var Cloud = require('ti.cloud');
 
 $.btnLogin.addEventListener('click', function(e){
 	//alert('Bienvenido ' + $.txtUser.value);
-	if($.txtUser.value =="admin" && $.txtPass.value=="admin"){
-		var main = Alloy.createController('main').getView();
-		main.open();
-	}else{
-		var sing = Alloy.createController('singUp').getView();
-		sing.open();
-	}
-	Titanium.API.info('presionaste el boton');
+	Cloud.Users.login({
+		login: $.txtPass.value,
+		password:$.txtPass.value,
+	}, function(e){
+		if (e.success){
+			alert('Succes Login');
+		}else{
+			alert('Login Fail');
+		}
+	});
 });
 
-function informacion(){
-	Ti.API.info();
-}
+$.btnSing.addEventListener('click',function(e){
+	var sing = Alloy.createController('singUp').getView();
+	sing.open();
+	
+	Ti.API.info('Presionaste el boton de Sing Up');
+});
+
 
 $.index.open();
