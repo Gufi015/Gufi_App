@@ -56,6 +56,15 @@
 	borderRadius:"5",
 }
 
+"#btnSing":{
+	top:"20",
+	width:"350",
+	height:"50",
+	backgroundColor:"#009e5b",
+	borderRadius:"5",
+}
+
+
 "#txtUser": {
 	width:350,
 	height:40,

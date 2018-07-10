@@ -14,6 +14,7 @@
 			<View class="footer">
 				<Button id="btnLogin">Login</Button>
 				<Button id="btnSing">Sing Up</Button>
+				<Button id="btnFotgot">Forgot Pass</Button>
 			</View>
 		</View>
 	</Window>

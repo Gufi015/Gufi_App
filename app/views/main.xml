@@ -1,6 +1,9 @@
 <Alloy>
 	<Window>
 		<View class="container">
+			<View class="center">
+				
+			</View>
 			<Label id="label">Pagina Principal</Label>
 			<Button id="btnMain">DatosMain</Button>
 		</View>

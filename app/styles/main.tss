@@ -6,6 +6,13 @@
 	layout:"vertical",
 }
 
+".center" : {
+  	backgroundColor:"#f2f4f4",
+	width:"100%",
+	height:"80%",
+	layout:"vertical",
+}
+
 "#label":{
 	color:"RED",
 	width:"70",

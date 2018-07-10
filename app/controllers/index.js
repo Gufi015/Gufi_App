@@ -9,7 +9,9 @@ $.btnLogin.addEventListener('click', function(e){
 	}, function(e){
 		if (e.success){
 			//var user = users[0];
-			alert('Bienvenido Usuario' + $.txtUser.value + 'Con numero de session:' + Cloud.sessionId);
+			//alert('Bienvenido Usuario:' + $.txtUser.value + '\n Con numero de session: ' + Cloud.sessionId);
+			var main = Alloy.createController('main').getView();
+			main.open();
 		}else{
 			alert('Login Fail' + JSON.stringify(e));
 		}
