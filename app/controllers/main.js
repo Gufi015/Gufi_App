@@ -4,12 +4,12 @@ var Cloud = require('ti.cloud');
 
 $.btnMain.addEventListener('click', function(e){
 	//alert('Bienvendo');
-	Cloud.Users.showMe(function(e){
-		if(e.succes){
+	/*Cloud.Users.showMe(function (e) {
+		if (e.succes) {
 			var user = e.users[0];
-			alert('SUCCES \N'+ user.id +'USER_ID');
-		}else{
-			alert('error');
-		}	
-	});
+			alert('SUCCES \N' + user.id + 'USER_ID');
+		} else {
+			alert('error' + JSON.stringify(e));
+		}
+	});*/
 });
