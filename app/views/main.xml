@@ -2,10 +2,9 @@
 	<Window>
 		<View class="container">
 			<View class="center">
-				
+				<Label id="label">Pagina Principal</Label>
+				<Button id="btnMain">DatosMain</Button>
 			</View>
-			<Label id="label">Pagina Principal</Label>
-			<Button id="btnMain">DatosMain</Button>
 		</View>
 	</Window>
 </Alloy>
