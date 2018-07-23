@@ -25,5 +25,9 @@ $.btnSing.addEventListener('click',function(e){
 	Ti.API.info('Presionaste el boton de Sing Up');
 });
 
+$.btnFotgot.addEventListener('click', function(e){
+	var forgot = Alloy.createController('forgotPassword').getView();
+	forgot.open();
+});
 
 $.index.open();

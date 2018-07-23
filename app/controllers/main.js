@@ -12,13 +12,13 @@ $.btnMain.addEventListener('click', function(e){
 		if(e.success){
 			alert('Consulta:\n'+ 'Count: ' + e.users.length);
 			for (var i = 0;  i < e.users.length; i++){ 
-				var user = users[i];
+				var user = e.users[i];
 				alert('ID: ' + user.id + '\n' +
 					'FIRST NAME: ' + user.first_name + '\n' +
 					'LAST_NAME: ' + user.last_name);
 			}
 		}else{
-			alert('Error \n' +((e.error && e.message)|| JSON.stringify(e)));
+			alert('Error \n' +((e.error && e.message) || JSON.stringify(e)));
 		}
 	});
 });

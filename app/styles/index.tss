@@ -64,6 +64,13 @@
 	borderRadius:"5",
 }
 
+"#btnFotgot":{
+	top:"30",
+	width:"350",
+	height:"50",
+	backgroundColor:"#009e5b",
+	borderRadius:"5"
+}
 
 "#txtUser": {
 	width:350,
