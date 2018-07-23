@@ -3,28 +3,19 @@ var args = $.args;
 var Cloud = require('ti.cloud');
 
 $.btnMain.addEventListener('click', function(e){
-	//alert('Bienvendo');
-	/*Cloud.Users.showMe(function (e) {
-		if (e.succes) {
-			var user = e.users[0];
-			alert('SUCCES \N' + user.id + 'USER_ID');
-		} else {
-			alert('error' + JSON.stringify(e));
-		}
-	});*/
-
-	Cloud.Users.queryUsers({
+	Cloud.Users.query({
 		page: 1,
-		per_page: 10,
-		where:{}
+		per_page: 20,
+		where:{
+	    }
 	},function(e){
-		if(e.succes){
+		if(e.success){
 			alert('Consulta:\n'+ 'Count: ' + e.users.length);
 			for (var i = 0;  i < e.users.length; i++){ 
 				var user = users[i];
 				alert('ID: ' + user.id + '\n' +
 					'FIRST NAME: ' + user.first_name + '\n' +
-					'LAST_NAME: ' +user.last_name);
+					'LAST_NAME: ' + user.last_name);
 			}
 		}else{
 			alert('Error \n' +((e.error && e.message)|| JSON.stringify(e)));
