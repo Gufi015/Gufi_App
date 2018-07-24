@@ -26,20 +26,20 @@ $.btnMain.addEventListener('click', function (e) {
 
 
 $.btnDemo.addEventListener('click', function (e) {
-	Cloud.Photo.create({
-		Photo: Titanium.Filesystem.getFile('user.png')
-	}, function (e) {
-		if (e.success) {
-			var photo = e.photos[0];
-			alert('Success:\n' +
-				'ID:' + photo.id + '\n' +
-				'FILE_NAME' + photo.filename + '\n' +
-				'SIZE' + photo.size,
-				'UPDATE_AT:' + photo.updated_at
-			);
-		} else {
-			alert('Error:\n' +
-				(e.error && e.message) || JSON.stringify(e));
-		}
-	});
+	Cloud.Photos.create({
+        Photo: Titanium.Filesystem.getFile('/images/user.png')
+    }, function (e) {
+        if (e.success) {
+            var photo = e.photos[0];
+            alert('Success:\n' +
+                'ID:' + photo.id + '\n' +
+                'FILE_NAME' + photo.filename + '\n' +
+                'SIZE' + photo.size,
+                'UPDATE_AT:' + photo.updated_at
+            );
+        } else {
+            alert('Error:\n' +
+                (e.error && e.message) || JSON.stringify(e));
+        }
+    });
 });

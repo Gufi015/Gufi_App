@@ -4,7 +4,7 @@ var Cloud = require('ti.cloud');
 
 $.btnPhoto.addEventListener('click', function (e) {
     Cloud.Photos.create({
-        Photo: Titanium.Filesystem.getFile('user.png')
+        Photo: Titanium.Filesystem.getFile('/images/user.png')
     }, function (e) {
         if (e.success) {
             var photo = e.photos[0];
