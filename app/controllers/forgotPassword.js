@@ -43,12 +43,12 @@ $.btnGallery.addEventListener('click', function(e){
 		success: function(e){
 			alert('Media.width: ' + e.media.width 
 			+'\n Media.height: ' + e.media.height
-			+'\n Media.lenght: ' + e.media.lenght
+			+'\n Media.lenght: ' + e.media.length
 			+'\n Media.mimeType: ' + e.media.mimeType
 			+'\n Media.nativePath: ' + e.media.nativePath );
 		},
 		error: function(e){
-			alert('Error:'+e);
+			alert('Error:'+ e.code);
 		}
 	});
 });
