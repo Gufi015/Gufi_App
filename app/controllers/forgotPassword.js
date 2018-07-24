@@ -1,8 +1,9 @@
 // Arguments passed into this controller can be accessed via the `$.args` object directly or:
 var args = $.args;
 var Cloud = require('ti.cloud');
-var image;
+//var image;
 $.btnPhoto.addEventListener('click', function (e) {
+	var image;
     Titanium.Media.openPhotoGallery({
         success: function (e) {
             if (e.mediaType == Ti.Media.MEDIA_TYPE_PHOTO) {
