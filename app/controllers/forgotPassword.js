@@ -4,9 +4,7 @@ var Cloud = require('ti.cloud');
 
 $.btnPhoto.addEventListener('click', function (e) {
     Cloud.Photos.create({
-    	//acl_name: '',
-    	acl_id: '5b56968db6d8950220285a95',
-        Photo: Titanium.Filesystem.getFile('/images/user.png'),
+        photo: Titanium.Filesystem.getFile('/images/user.png'),
     }, function (e) {
         if (e.success) {
             var photo = e.photos[0];
