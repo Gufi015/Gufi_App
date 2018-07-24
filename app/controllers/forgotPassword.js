@@ -6,11 +6,12 @@ $.btnPhoto.addEventListener('click', function (e) {
 	var image;
     Titanium.Media.openPhotoGallery({
         success: function (e) {
-            if (e.mediaType == Ti.Media.MEDIA_TYPE_PHOTO) {
+            if (e.mediaType == Titanium.Media.MEDIA_TYPE_PHOTO) {
                 image = e.media;
-                alert(image);
+                //alert(image);
+                
                 Cloud.Photos.create({
-                    photo: image,
+                    photo: image
                 }, function (e) {
                     if (e.success) {
                         var photo = e.photos[0];
@@ -35,3 +36,25 @@ $.btnPhoto.addEventListener('click', function (e) {
         mediaTypes:[Ti.Media.MEDIA_TYPE_PHOTO]
     });
 });
+
+$.btnGallery.addEventListener('click', function(e){
+	Ti.Media.openPhotoGallery({
+		mediaTypes:[Titanium.Media.MEDIA_TYPE_PHOTO],
+		success: function(e){
+			alert('Media.width: ' + e.media.width 
+			+'\n Media.height: ' + e.media.height
+			+'\n Media.lenght: ' + e.media.lenght
+			+'\n Media.mimeType: ' + e.media.mimeType
+			+'\n Media.nativePath: ' + e.media.nativePath );
+		},
+		error: function(e){
+			alert('Error:'+e);
+		}
+	});
+});
+
+
+
+
+
+
