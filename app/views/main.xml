@@ -5,6 +5,7 @@
 				<Label id="label">Pagina Principal</Label>
 				<Button id="btnMain">DatosMain</Button>
 			</View>
+			<Button id="btnDemo">Demo</Button>
 		</View>
 	</Window>
 </Alloy>
