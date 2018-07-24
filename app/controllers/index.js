@@ -28,6 +28,7 @@ $.btnSing.addEventListener('click',function(e){
 $.btnFotgot.addEventListener('click', function(e){
 	var forgot = Alloy.createController('forgotPassword').getView();
 	forgot.open();
+	Ti.API.info('Presionaste Forgot');
 });
 
 $.index.open();
