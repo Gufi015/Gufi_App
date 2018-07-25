@@ -26,10 +26,10 @@ $.btnPhoto.addEventListener('click', function (e) {
                     if (e.success) {
                         var photo = e.photos[0];
                         alert('Success:\n' +
-                            'ID:' + photo.id + '\n' +
-                            'FILE_NAME' + photo.filename + '\n' +
-                            'SIZE' + photo.size,
-                            'UPDATE_AT:' + photo.updated_at
+                            'ID: ' + photo.id + '\n' +
+                            'FILE_NAME: ' + photo.filename + '\n' +
+                            'SIZE: ' + photo.size,
+                            'UPDATE_AT: ' + photo.updated_at
                         );
                     } else {
                         alert('Error:\n' +
@@ -59,6 +59,30 @@ $.btnGallery.addEventListener('click', function(e){
 	});
 });
 
+$.btnViewPhoto.addEventListener('click', function(e){
+	Cloud.Photos.query({
+		page:1,
+		per_page: 10,
+		where:{
+			
+		}
+	}, function(e){
+		if(e.success){
+			alert('Success: \n '+ 'Count: ' + e.photos.length);
+			
+			for(var i = 0; i < e.photos.length ; 1++){
+				var photo = e.photos[i];
+				alert('ID: ' + photo.id+ '\n'
+				+'FILE_NAME: ' + photo.filename+ '\n'
+				+'SIZE: '+ photo.size+ '\n'
+				+ 'UPDATED_AT: ' + photo.updated_at);
+			}
+			
+		}else{
+			alert('Error: '+ ((e.error&& e.message)|| JSON.stringify(e)));
+		}
+	});
+});
 
 
 
