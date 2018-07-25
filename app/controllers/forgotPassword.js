@@ -3,8 +3,6 @@ var args = $.args;
 var Cloud = require('ti.cloud');
 var image;
 
-
-
 /*var permissions = ['android.permission.CAMERA', 'android.permission.READ_EXTERNAL_STORAGE'];
 Ti.Android.requestPermissions(permissions, function(e) {
     if (e.success) {
@@ -14,6 +12,30 @@ Ti.Android.requestPermissions(permissions, function(e) {
     }
 });
 */
+$.btnViewPhoto.addEventListener('click', function(e){
+	Cloud.Photos.query({
+		page:1,
+		per_page: 10,
+		where:{
+			
+		}
+	}, function(e){
+		if(e.success){
+			alert('Success: \n '+ 'Count: ' + e.photos.length);
+			
+			for(var i = 0; i < e.photos.length ; 1++){
+				var photo = e.photos[i];
+				alert('ID: ' + photo.id+ '\n'
+				+'FILE_NAME: ' + photo.filename+ '\n'
+				+'SIZE: '+ photo.size+ '\n'
+				+ 'UPDATED_AT: ' + photo.updated_at);
+			}
+			
+		}else{
+			alert('Error: '+ ((e.error&& e.message)|| JSON.stringify(e)));
+		}
+	});
+});
 
 $.btnPhoto.addEventListener('click', function (e) {
     Titanium.Media.openPhotoGallery({
@@ -59,30 +81,7 @@ $.btnGallery.addEventListener('click', function(e){
 	});
 });
 
-$.btnViewPhoto.addEventListener('click', function(e){
-	Cloud.Photos.query({
-		page:1,
-		per_page: 10,
-		where:{
-			
-		}
-	}, function(e){
-		if(e.success){
-			alert('Success: \n '+ 'Count: ' + e.photos.length);
-			
-			for(var i = 0; i < e.photos.length ; 1++){
-				var photo = e.photos[i];
-				alert('ID: ' + photo.id+ '\n'
-				+'FILE_NAME: ' + photo.filename+ '\n'
-				+'SIZE: '+ photo.size+ '\n'
-				+ 'UPDATED_AT: ' + photo.updated_at);
-			}
-			
-		}else{
-			alert('Error: '+ ((e.error&& e.message)|| JSON.stringify(e)));
-		}
-	});
-});
+
 
 
 
